@@ -29,15 +29,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         let tarou = Account(name: "太郎", age: 30, gender: "男性", language: "swift")
         let hanako = Account(name: "華子", age: 20, gender: "女性", language: "objective-c")
 
-        let lists :Array<Any> = [tarou,hanako]
+        let lists :Array<Account> = [tarou,hanako]
         
-        for list in lists {
-            
-        }
+        for list:Account in lists {
+                   list.SelfIntroduction()
+                }
     }
         
 }
