@@ -19,7 +19,7 @@
                                 <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="actionsheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="09k-Qf-dc8"/>
+                                    <action selector="alert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vaA-bh-q2W"/>
                                 </connections>
                             </button>
                         </subviews>
