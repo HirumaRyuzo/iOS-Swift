@@ -14,10 +14,11 @@
 		2FE1FED524D7B63C0090BA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FED424D7B63C0090BA4D /* Assets.xcassets */; };
 		2FE1FED824D7B63C0090BA4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FED624D7B63C0090BA4D /* LaunchScreen.storyboard */; };
 		2FE1FEE124D7E91C0090BA4D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE1FEE024D7E91C0090BA4D /* WebKit.framework */; };
+		2FE1FEE324DA3FB00090BA4D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FEE224DA3FB00090BA4D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2FE1FEC824D7B6370090BA4D /* swift2.1.6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift2.1.6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE1FEC824D7B6370090BA4D /* WKwebview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKwebview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE1FECB24D7B6370090BA4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FE1FECD24D7B6370090BA4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2FE1FECF24D7B6370090BA4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +27,7 @@
 		2FE1FED724D7B63C0090BA4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FE1FED924D7B63C0090BA4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FE1FEE024D7E91C0090BA4D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2FE1FEE224DA3FB00090BA4D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,8 @@
 		2FE1FEBF24D7B6370090BA4D = {
 			isa = PBXGroup;
 			children = (
-				2FE1FECA24D7B6370090BA4D /* swift2.1.6 */,
+				2FE1FEE224DA3FB00090BA4D /* Default-568h@2x.png */,
+				2FE1FECA24D7B6370090BA4D /* WKwebview */,
 				2FE1FEC924D7B6370090BA4D /* Products */,
 				2FE1FEDF24D7E91C0090BA4D /* Frameworks */,
 			);
@@ -52,12 +55,12 @@
 		2FE1FEC924D7B6370090BA4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FE1FEC824D7B6370090BA4D /* swift2.1.6.app */,
+				2FE1FEC824D7B6370090BA4D /* WKwebview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2FE1FECA24D7B6370090BA4D /* swift2.1.6 */ = {
+		2FE1FECA24D7B6370090BA4D /* WKwebview */ = {
 			isa = PBXGroup;
 			children = (
 				2FE1FECB24D7B6370090BA4D /* AppDelegate.swift */,
@@ -68,7 +71,7 @@
 				2FE1FED624D7B63C0090BA4D /* LaunchScreen.storyboard */,
 				2FE1FED924D7B63C0090BA4D /* Info.plist */,
 			);
-			path = swift2.1.6;
+			path = WKwebview;
 			sourceTree = "<group>";
 		};
 		2FE1FEDF24D7E91C0090BA4D /* Frameworks */ = {
@@ -82,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FE1FEC724D7B6370090BA4D /* swift2.1.6 */ = {
+		2FE1FEC724D7B6370090BA4D /* WKwebview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FE1FEDC24D7B63C0090BA4D /* Build configuration list for PBXNativeTarget "swift2.1.6" */;
+			buildConfigurationList = 2FE1FEDC24D7B63C0090BA4D /* Build configuration list for PBXNativeTarget "WKwebview" */;
 			buildPhases = (
 				2FE1FEC424D7B6370090BA4D /* Sources */,
 				2FE1FEC524D7B6370090BA4D /* Frameworks */,
@@ -94,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = swift2.1.6;
+			name = WKwebview;
 			productName = swift2.1.6;
-			productReference = 2FE1FEC824D7B6370090BA4D /* swift2.1.6.app */;
+			productReference = 2FE1FEC824D7B6370090BA4D /* WKwebview.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2FE1FEC324D7B6370090BA4D /* Build configuration list for PBXProject "swift2.1.6" */;
+			buildConfigurationList = 2FE1FEC324D7B6370090BA4D /* Build configuration list for PBXProject "WKwebview" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FE1FEC724D7B6370090BA4D /* swift2.1.6 */,
+				2FE1FEC724D7B6370090BA4D /* WKwebview */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FE1FED824D7B63C0090BA4D /* LaunchScreen.storyboard in Resources */,
+				2FE1FEE324DA3FB00090BA4D /* Default-568h@2x.png in Resources */,
 				2FE1FED524D7B63C0090BA4D /* Assets.xcassets in Resources */,
 				2FE1FED324D7B6370090BA4D /* Main.storyboard in Resources */,
 			);
@@ -212,6 +216,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 974LVD65BN;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -272,6 +277,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 974LVD65BN;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -297,7 +303,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = swift2.1.6/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WKwebview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +321,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = swift2.1.6/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WKwebview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FE1FEC324D7B6370090BA4D /* Build configuration list for PBXProject "swift2.1.6" */ = {
+		2FE1FEC324D7B6370090BA4D /* Build configuration list for PBXProject "WKwebview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FE1FEDA24D7B63C0090BA4D /* Debug */,
@@ -338,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FE1FEDC24D7B63C0090BA4D /* Build configuration list for PBXNativeTarget "swift2.1.6" */ = {
+		2FE1FEDC24D7B63C0090BA4D /* Build configuration list for PBXNativeTarget "WKwebview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FE1FEDD24D7B63C0090BA4D /* Debug */,

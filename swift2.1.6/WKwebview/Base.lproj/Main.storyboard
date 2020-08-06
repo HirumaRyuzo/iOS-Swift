@@ -21,7 +21,7 @@
                                 <items>
                                     <navigationItem id="Kra-41-hza">
                                         <nil key="title"/>
-                                        <barButtonItem key="leftBarButtonItem" title="back" style="plain" id="nIE-14-cBn">
+                                        <barButtonItem key="leftBarButtonItem" title="back" style="done" id="nIE-14-cBn">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hf5-jp-hQV">
                                                 <rect key="frame" x="16" y="11" width="74" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -39,7 +39,7 @@
                                                 <action selector="reloadInputViews" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiC-Lc-Qvw"/>
                                             </connections>
                                         </button>
-                                        <barButtonItem key="rightBarButtonItem" title="go" style="plain" id="TWu-K7-bLV">
+                                        <barButtonItem key="rightBarButtonItem" title="go" style="done" id="TWu-K7-bLV">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tzm-te-T3b">
                                                 <rect key="frame" x="339" y="11" width="20" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

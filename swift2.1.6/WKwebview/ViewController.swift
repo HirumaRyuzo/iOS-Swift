@@ -50,6 +50,15 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         self.webView.goForward()
                 print ("go")
     }
+    
+    //オフライン状態を取得
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        let e = error as NSError
+
+        if e.code == -1009 {
+            print("Not Connected To Internet")
+        }
+    }
 
 }
 
