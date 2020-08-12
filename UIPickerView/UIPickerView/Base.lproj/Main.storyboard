@@ -15,31 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odg-xS-P7q">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3T-NO-gIE">
-                                <rect key="frame" x="166.5" y="323.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jRl-IU-On7" customClass="CustomTextField" customModule="UIPickerView" customModuleProvider="target">
+                                <rect key="frame" x="139" y="316" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Odg-xS-P7q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4zJ-jS-xvP"/>
-                            <constraint firstItem="Y3T-NO-gIE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5ut-G1-XWi"/>
-                            <constraint firstItem="Odg-xS-P7q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZbV-m8-8yD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Odg-xS-P7q" secondAttribute="trailing" id="d3f-Hf-xme"/>
-                            <constraint firstItem="Y3T-NO-gIE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kLf-gr-9nU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Odg-xS-P7q" secondAttribute="bottom" id="plR-fY-EM1"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="Y3T-NO-gIE" id="F8W-h6-HoG"/>
-                        <outlet property="pickerView" destination="Odg-xS-P7q" id="JYC-A7-x2x"/>
-                        <outlet property="tapLabel" destination="Y3T-NO-gIE" id="bYL-vG-Dt5"/>
+                        <outlet property="textField" destination="jRl-IU-On7" id="u3j-Pk-OcD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

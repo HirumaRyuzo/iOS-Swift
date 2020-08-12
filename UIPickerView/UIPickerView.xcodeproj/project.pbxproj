@@ -13,6 +13,7 @@
 		2FE1FF1824E26A600090BA4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FF1624E26A600090BA4D /* Main.storyboard */; };
 		2FE1FF1A24E26A690090BA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FF1924E26A690090BA4D /* Assets.xcassets */; };
 		2FE1FF1D24E26A690090BA4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FF1B24E26A690090BA4D /* LaunchScreen.storyboard */; };
+		2FE1FF4924E368EE0090BA4D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1FF4824E368EE0090BA4D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2FE1FF1924E26A690090BA4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE1FF1C24E26A690090BA4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FE1FF1E24E26A690090BA4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE1FF4824E368EE0090BA4D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				2FE1FF1024E26A600090BA4D /* AppDelegate.swift */,
 				2FE1FF1224E26A600090BA4D /* SceneDelegate.swift */,
 				2FE1FF1424E26A600090BA4D /* ViewController.swift */,
+				2FE1FF4824E368EE0090BA4D /* CustomTextField.swift */,
 				2FE1FF1624E26A600090BA4D /* Main.storyboard */,
 				2FE1FF1924E26A690090BA4D /* Assets.xcassets */,
 				2FE1FF1B24E26A690090BA4D /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE1FF4924E368EE0090BA4D /* CustomTextField.swift in Sources */,
 				2FE1FF1524E26A600090BA4D /* ViewController.swift in Sources */,
 				2FE1FF1124E26A600090BA4D /* AppDelegate.swift in Sources */,
 				2FE1FF1324E26A600090BA4D /* SceneDelegate.swift in Sources */,
