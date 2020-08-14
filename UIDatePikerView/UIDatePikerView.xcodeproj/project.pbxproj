@@ -13,6 +13,7 @@
 		2FE1FF3824E34C200090BA4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FF3624E34C200090BA4D /* Main.storyboard */; };
 		2FE1FF3A24E34C230090BA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FF3924E34C230090BA4D /* Assets.xcassets */; };
 		2FE1FF3D24E34C230090BA4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1FF3B24E34C230090BA4D /* LaunchScreen.storyboard */; };
+		2FE1FF4B24E3D7EA0090BA4D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1FF4A24E3D7EA0090BA4D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2FE1FF3924E34C230090BA4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE1FF3C24E34C230090BA4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FE1FF3E24E34C230090BA4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE1FF4A24E3D7EA0090BA4D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				2FE1FF3224E34C200090BA4D /* SceneDelegate.swift */,
 				2FE1FF3424E34C200090BA4D /* ViewController.swift */,
 				2FE1FF3624E34C200090BA4D /* Main.storyboard */,
+				2FE1FF4A24E3D7EA0090BA4D /* CustomTextField.swift */,
 				2FE1FF3924E34C230090BA4D /* Assets.xcassets */,
 				2FE1FF3B24E34C230090BA4D /* LaunchScreen.storyboard */,
 				2FE1FF3E24E34C230090BA4D /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE1FF4B24E3D7EA0090BA4D /* CustomTextField.swift in Sources */,
 				2FE1FF3524E34C200090BA4D /* ViewController.swift in Sources */,
 				2FE1FF3124E34C200090BA4D /* AppDelegate.swift in Sources */,
 				2FE1FF3324E34C200090BA4D /* SceneDelegate.swift in Sources */,
