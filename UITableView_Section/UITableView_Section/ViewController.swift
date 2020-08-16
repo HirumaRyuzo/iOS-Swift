@@ -77,7 +77,20 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
             let dic = _items.object(at: indexPath.row) as! NSDictionary
             cell.textLabel!.text = dic.value(forKey: "Name") as? String
             print(cell.textLabel!.text as Any)
-        }
+    }
+    
+    //セクション数の設定
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    //セクション名設定
+    let sectionTitles = ["セクション1","セクション2"]
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
+    {
+
+        return sectionTitles[section]
+    }
 
 }
 
