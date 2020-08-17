@@ -13,7 +13,7 @@
 		2FD2A5E124E8FD3D0063D963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2A5DF24E8FD3D0063D963 /* Main.storyboard */; };
 		2FD2A5E324E8FD400063D963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2A5E224E8FD400063D963 /* Assets.xcassets */; };
 		2FD2A5E624E8FD400063D963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2A5E424E8FD400063D963 /* LaunchScreen.storyboard */; };
-		2FD2A5EE24E8FD820063D963 /* DisneyCharacterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2A5ED24E8FD820063D963 /* DisneyCharacterList.plist */; };
+		2FD2A61224EA4E820063D963 /* DisneyCharacterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2A61124EA4E820063D963 /* DisneyCharacterList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		2FD2A5E224E8FD400063D963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FD2A5E524E8FD400063D963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FD2A5E724E8FD400063D963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FD2A5ED24E8FD820063D963 /* DisneyCharacterList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DisneyCharacterList.plist; path = ../../../DisneyCharacterList.plist; sourceTree = "<group>"; };
+		2FD2A61124EA4E820063D963 /* DisneyCharacterList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DisneyCharacterList.plist; path = ../../../DisneyCharacterList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				2FD2A5E224E8FD400063D963 /* Assets.xcassets */,
 				2FD2A5E424E8FD400063D963 /* LaunchScreen.storyboard */,
 				2FD2A5E724E8FD400063D963 /* Info.plist */,
-				2FD2A5ED24E8FD820063D963 /* DisneyCharacterList.plist */,
+				2FD2A61124EA4E820063D963 /* DisneyCharacterList.plist */,
 			);
 			path = UITableView_Section;
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD2A5EE24E8FD820063D963 /* DisneyCharacterList.plist in Resources */,
+				2FD2A61224EA4E820063D963 /* DisneyCharacterList.plist in Resources */,
 				2FD2A5E624E8FD400063D963 /* LaunchScreen.storyboard in Resources */,
 				2FD2A5E324E8FD400063D963 /* Assets.xcassets in Resources */,
 				2FD2A5E124E8FD3D0063D963 /* Main.storyboard in Resources */,
