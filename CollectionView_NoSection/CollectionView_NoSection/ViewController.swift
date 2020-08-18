@@ -41,12 +41,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     private let itemsPerRow: CGFloat = 2
     
     // Screenサイズに応じたセルサイズを返す
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-        let availableWidth = view.frame.width - paddingSpace
-        let widthPerItem = availableWidth / itemsPerRow
-        return CGSize(width: widthPerItem, height: widthPerItem + 42)
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//
+//        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+//        let availableWidth = view.frame.width - paddingSpace
+//        let widthPerItem = availableWidth / itemsPerRow
+//        return CGSize(width: widthPerItem, height: widthPerItem + 42)
+//        
+//    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let width: CGFloat = view.frame.width / 3 - 2
+        let height: CGFloat = width
+        return CGSize(width: width, height: height)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

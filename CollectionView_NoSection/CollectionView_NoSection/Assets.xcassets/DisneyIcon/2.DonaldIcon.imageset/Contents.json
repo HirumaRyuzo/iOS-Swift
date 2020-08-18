@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "ドナルド_イラスト　鉛筆　顔_-_Google_検索.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "donald.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
