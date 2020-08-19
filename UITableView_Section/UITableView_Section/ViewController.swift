@@ -51,8 +51,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 
     // MARK: - pattern②Plistあり
     @IBOutlet weak var commentTableView: UITableView!
-    @IBOutlet weak var image: UIImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,7 +90,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let item = _items[indexPath.section].Items[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DisneyCell", for: indexPath as IndexPath)
-        cell.textLabel?.numberOfLines=0
+//        cell.textLabel?.numberOfLines=0
         cell.textLabel?.text = item.Name
         cell.imageView?.image = UIImage(named: item.Image)
         
