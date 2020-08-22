@@ -1,9 +1,9 @@
 //
-//  ViewController.swift
-//  stv50_mrmt_23
+//  SceneDelegate.swift
+//  UINavigationController_PushPop
 //
-//  Created by 丸本聡 on 2019/07/26.
-//  Copyright © 2019 丸本聡. All rights reserved.
+//  Created by 比留間龍三 on 2020/08/23.
+//  Copyright © 2020 すいふと. All rights reserved.
 //
 
 import UIKit
