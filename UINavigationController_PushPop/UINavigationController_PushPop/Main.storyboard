@@ -16,8 +16,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-2T-QMx">
-                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
-                                <state key="normal" title="ぷっしゅ"/>
+                                <rect key="frame" x="167" y="318.5" width="41" height="30"/>
+                                <state key="normal" title="PUSH"/>
                                 <connections>
                                     <action selector="pushButton:" destination="y1Q-Br-CCz" eventType="touchUpInside" id="0Rr-Jc-maC"/>
                                 </connections>
