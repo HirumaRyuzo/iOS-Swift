@@ -1,0 +1,53 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "name" : "FBSDKShareKit",
+      "hash" : "c7045bfb00cf43f9795f3e3c6869263dbe428a45c39b0ae51726b703786958cf",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FBSDKLoginKit",
+      "hash" : "823a27cfd5e57377607e285bb5909251f50eb92ccf500b02bb9f4178fc486f77",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FBSDKTVOSKit",
+      "hash" : "27acd2c33eebfa5e6839345ab43ceb6e6be8dcaaef2c5c8ccb3a0a013a5708e4",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FBSDKCoreKit",
+      "hash" : "58650e12b41c1f403ab5ad29dd3df69e46d800e4d46b26c92e862d9b1d154e6b",
+      "linking" : "dynamic"
+    }
+  ],
+  "commitish" : "v6.2.0",
+  "iOS" : [
+    {
+      "name" : "FBSDKGamingServicesKit",
+      "hash" : "d9129b0b3016cd349571b1684866213c90fceeb756acdc1386ab9e7e8d05c295",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FBSDKLoginKit",
+      "hash" : "9ca9e979c5e23362c6276969a9ce4d604226f72a1ef11637464fce9e17b5fd45",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FBSDKShareKit",
+      "hash" : "e59f5163116b9cda02d2c67629aa5fb13e4889110ea3a65308bf75d8ca71d5bb",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FBSDKCoreKit",
+      "hash" : "58a1a15dd342e0e00c10b1dfd3b87c2c5fc86a09956ea4c7c290dc40d38bd438",
+      "linking" : "dynamic"
+    }
+  ]
+}
