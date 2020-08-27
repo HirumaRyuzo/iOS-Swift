@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stv50_mrmt_42" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W23-ov-pvC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="W23-ov-pvC" secondAttribute="height" multiplier="1:1" id="vFN-ig-00P"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jpn-KR-AuQ">
+                                <rect key="frame" x="0.0" y="525" width="142" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jpn-KR-AuQ" secondAttribute="height" multiplier="1:1" id="Ntl-X5-yWs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cQ-al-8RM">
+                                <rect key="frame" x="138" y="397" width="99" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="YFr-H9-tKA"/>
+                                    <constraint firstAttribute="height" constant="99" id="qMt-sG-snI"/>
+                                </constraints>
+                                <state key="normal" image="mickey_icon"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63k-lA-7kG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jpn-KR-AuQ" firstAttribute="top" secondItem="W23-ov-pvC" secondAttribute="bottom" constant="150" id="6fF-uh-NLT"/>
+                            <constraint firstItem="Jpn-KR-AuQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ImL-eu-UIl"/>
+                            <constraint firstItem="7cQ-al-8RM" firstAttribute="top" secondItem="W23-ov-pvC" secondAttribute="bottom" constant="22" id="K9u-KS-QKE"/>
+                            <constraint firstAttribute="trailing" secondItem="W23-ov-pvC" secondAttribute="trailing" id="KjB-8k-aDQ"/>
+                            <constraint firstItem="W23-ov-pvC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZAx-m7-MAp"/>
+                            <constraint firstItem="Jpn-KR-AuQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="boD-IS-F5L"/>
+                            <constraint firstItem="7cQ-al-8RM" firstAttribute="centerX" secondItem="W23-ov-pvC" secondAttribute="centerX" id="x4C-Bk-1B4"/>
+                            <constraint firstItem="W23-ov-pvC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xCm-Mg-b6B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="W23-ov-pvC" id="Ta9-19-NeB"/>
+                        <outlet property="resultView" destination="Jpn-KR-AuQ" id="NoB-EE-INF"/>
+                        <outlet property="shutterButton" destination="7cQ-al-8RM" id="992-x0-JxP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mickey_icon" width="600" height="600"/>
+    </resources>
+</document>
