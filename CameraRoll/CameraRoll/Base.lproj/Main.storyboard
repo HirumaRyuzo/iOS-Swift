@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stv50_mrmt_43" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yI-6a-PSp">
+                                <rect key="frame" x="111" y="428" width="153" height="30"/>
+                                <state key="normal" title="カメラロールから選択"/>
+                                <connections>
+                                    <action selector="setButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBJ-qi-8Io"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NEX-Bs-adb">
+                                <rect key="frame" x="0.0" y="30" width="375" height="328"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="u5x-NN-AMm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0yI-6a-PSp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FnJ-Ci-xxo"/>
+                            <constraint firstItem="NEX-Bs-adb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PFr-rY-mO3"/>
+                            <constraint firstItem="NEX-Bs-adb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="RXS-H6-z6J"/>
+                            <constraint firstItem="NEX-Bs-adb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eEC-9M-6Jc"/>
+                            <constraint firstItem="0yI-6a-PSp" firstAttribute="top" secondItem="NEX-Bs-adb" secondAttribute="bottom" constant="70" id="wX6-DR-pYB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="facePicture" destination="NEX-Bs-adb" id="J7k-Np-Qz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>
