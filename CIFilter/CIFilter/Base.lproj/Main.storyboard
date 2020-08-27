@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stv50_mrmt_44" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aGU-zu-7gd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="317"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="317" id="hD3-tj-Rvj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQY-RV-Rz4">
+                                <rect key="frame" x="122.5" y="415" width="130" height="30"/>
+                                <state key="normal" title="CameraMode Start"/>
+                                <connections>
+                                    <action selector="startCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idu-PD-LtN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aGU-zu-7gd" firstAttribute="centerX" secondItem="fQY-RV-Rz4" secondAttribute="centerX" id="49O-8v-yDZ"/>
+                            <constraint firstItem="fQY-RV-Rz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7lQ-a5-I2m"/>
+                            <constraint firstItem="aGU-zu-7gd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KWT-g8-4wJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fQY-RV-Rz4" secondAttribute="bottom" constant="222" id="ef1-Vv-RGm"/>
+                            <constraint firstItem="aGU-zu-7gd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gi9-kd-hn1"/>
+                            <constraint firstItem="aGU-zu-7gd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sia-4w-8NG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="aGU-zu-7gd" id="uNB-oD-VzT"/>
+                        <segue destination="3Ng-Oa-BbD" kind="show" identifier="showEffectView" id="W5s-zf-lBS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="112.89355322338831"/>
+        </scene>
+        <!--Effect View Controller-->
+        <scene sceneID="fq3-6C-otm">
+            <objects>
+                <viewController id="3Ng-Oa-BbD" customClass="EffectViewController" customModule="stv50_mrmt_44" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0TC-IT-N2h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-AB-rdj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="316"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="316" id="fyI-ua-hLg"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="eIR-5p-Ef3">
+                                <rect key="frame" x="80" y="406" width="215" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDv-fz-XZw">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="30"/>
+                                        <state key="normal" title="MonochromeEffect"/>
+                                        <connections>
+                                            <action selector="effectButtonActionWith_sender:" destination="3Ng-Oa-BbD" eventType="touchUpInside" id="VxQ-Tq-v73"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnT-h1-SF4">
+                                        <rect key="frame" x="178" y="0.0" width="37" height="30"/>
+                                        <state key="normal" title="close"/>
+                                        <connections>
+                                            <action selector="closeButtonActionWith_sender:" destination="3Ng-Oa-BbD" eventType="touchUpInside" id="173-oy-Vc7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HCb-AB-rdj" firstAttribute="top" secondItem="zA1-vR-QPs" secondAttribute="top" constant="20" id="5vt-gR-oh4"/>
+                            <constraint firstItem="zA1-vR-QPs" firstAttribute="trailing" secondItem="eIR-5p-Ef3" secondAttribute="trailing" constant="80" id="Chv-5l-1Hz"/>
+                            <constraint firstItem="HCb-AB-rdj" firstAttribute="leading" secondItem="zA1-vR-QPs" secondAttribute="leading" id="XMW-MY-ug8"/>
+                            <constraint firstItem="eIR-5p-Ef3" firstAttribute="top" secondItem="HCb-AB-rdj" secondAttribute="bottom" constant="70" id="cKL-Xa-dDI"/>
+                            <constraint firstItem="eIR-5p-Ef3" firstAttribute="leading" secondItem="zA1-vR-QPs" secondAttribute="leading" constant="80" id="og6-3e-uLv"/>
+                            <constraint firstItem="HCb-AB-rdj" firstAttribute="trailing" secondItem="zA1-vR-QPs" secondAttribute="trailing" id="w9P-K7-UWB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zA1-vR-QPs"/>
+                    </view>
+                    <connections>
+                        <outlet property="effectImage" destination="HCb-AB-rdj" id="Tio-lR-RxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MV-Dk-fWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.20000000000005" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>
