@@ -21,7 +21,8 @@
 # Carthage/Checkouts
 #
 # Pods/
-Gitチュートリアル - ローカルリポジトリ編 - 2.gitignoreファイル􏰀設定 # cocoapods-keys
+Gitチュートリアル - ローカルリポジトリ編 - 2.gitignoreファイル􏰀設定
+# cocoapods-keys
 .env
 # Carthage #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
