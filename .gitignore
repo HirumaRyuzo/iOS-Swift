@@ -15,12 +15,9 @@
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control #
-# Pods/
 # cocoapods-keys .env
 # Carthage #4 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
-#
-# Pods/
 Gitチュートリアル - ローカルリポジトリ編 - 2.gitignoreファイル􏰀設定
 # cocoapods-keys
 .env
@@ -28,6 +25,7 @@ Gitチュートリアル - ローカルリポジトリ編 - 2.gitignoreファイ
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 Carthage/Build
+Pods/
 # fastlane #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
 # screenshots whenever they are needed.
