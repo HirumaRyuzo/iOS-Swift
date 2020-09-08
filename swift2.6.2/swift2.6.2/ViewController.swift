@@ -1,0 +1,39 @@
+//
+//  ViewController.swift
+//  swift2.6.2
+//
+//  Created by 比留間龍三 on 2020/09/04.
+//  Copyright © 2020 すいふと. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBAction func schemeCopy(_ sender: Any) {
+        UIPasteboard.general.string = "stv://hostname:8080/test?name=taro"
+    }
+    
+    @IBAction func safariJump(_ sender: Any) {
+         UIApplication.shared.open(URL(string:"https://www.google.co.jp/")!)
+    }
+    
+    @IBOutlet weak var host: UILabel!
+    @IBOutlet weak var port: UILabel!
+    @IBOutlet weak var query: UILabel!
+    
+    
+    @IBAction func getParameter(_ sender: Any) {
+        let _:AppDelegate  = UIApplication.shared.delegate as! AppDelegate
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.host.text = "..."
+        self.port.text = "..."
+        self.query.text = "..."
+        
+    }
+}
+
