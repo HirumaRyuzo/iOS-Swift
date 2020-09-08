@@ -21,7 +21,7 @@ class Account {
         self.language = language
     }
 
-    func SelfIntroduction() {
+    func selfIntroduction() {
         if self.gender == "男性"{
             print("\(self.name!)君は、\(self.language!)が得意な\(self.age!)歳です。")
         } else{

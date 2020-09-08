@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         let lists :Array<Account> = [tarou,hanako]
         
         for list:Account in lists {
-                   list.SelfIntroduction()
+                   list.selfIntroduction()
                 }
     }
         
