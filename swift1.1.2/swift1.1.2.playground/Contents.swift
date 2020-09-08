@@ -18,6 +18,7 @@ personInfo["sex"] = "man"
 personInfo["name"] //  hachinobu
 personInfo["age"]    //  28
 personInfo["sex"]    //  man
+print(personInfo)
 
 var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
 print(airports)
