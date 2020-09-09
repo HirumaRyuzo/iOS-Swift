@@ -10,14 +10,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swift2_1_6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WKwebview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlI-7k-fQ7">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlI-7k-fQ7">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="Kra-41-hza">
                                         <nil key="title"/>
@@ -56,9 +55,8 @@
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8w-qW-uOv" userLabel="webView">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8w-qW-uOv" userLabel="webView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -67,6 +65,15 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tlI-7k-fQ7" firstAttribute="top" secondItem="r8w-qW-uOv" secondAttribute="bottom" id="9rn-F6-sU1"/>
+                            <constraint firstItem="tlI-7k-fQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Foc-aj-bJn"/>
+                            <constraint firstItem="r8w-qW-uOv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RFk-bG-RTf"/>
+                            <constraint firstItem="r8w-qW-uOv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y1h-f1-u6A"/>
+                            <constraint firstItem="r8w-qW-uOv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZxF-fN-4mT"/>
+                            <constraint firstItem="tlI-7k-fQ7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="k4S-DI-hzR"/>
+                            <constraint firstItem="tlI-7k-fQ7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mpL-39-fgR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
