@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var delegate : SceneDelegate?
+    
     @IBAction func schemeCopy(_ sender: Any) {
         UIPasteboard.general.string = "stv://hostname:8080/test?name=taro"
     }
@@ -24,8 +26,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func getParameter(_ sender: Any) {
-        let _:AppDelegate  = UIApplication.shared.delegate as! AppDelegate
-        
+        print("test")
+        func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>){
+            // コールバックで来たURLの取得
+            guard let url = URLContexts.first?.url else {
+                return
+            }
+            let components = URLComponents(string: url.absoluteString)
+            let host = components?.host
+            print(host!)
+        }
     }
     
     override func viewDidLoad() {

@@ -27,16 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        print("url : \(url.absoluteString)")
-        print("scheme : \(url.scheme!)")
-        print("host : \(url.host!)")
-        print("port : \(url.port!)")
-        print("query : \(url.query!)")
-        
-        return true
-    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

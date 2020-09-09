@@ -11,6 +11,24 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+ 
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>){
+        print(URLContexts)
+                // コールバックで来たURLの取得
+                guard let url = URLContexts.first?.url else {
+                    return
+                }
+                
+                let components = URLComponents(string: url.absoluteString)
+        let host = components?.host
+        print(host!)
+        print(components?.url! as Any)
+        print(components?.scheme! as Any)
+        print(components?.host! as Any)
+        print(components?.port! as Any)
+        print(components?.query! as Any)
+        
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
