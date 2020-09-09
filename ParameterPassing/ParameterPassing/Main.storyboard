@@ -15,22 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfM-Xg-aNB">
-                                <rect key="frame" x="102" y="357" width="179" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfM-Xg-aNB">
+                                <rect key="frame" x="103" y="357" width="169" height="30"/>
                                 <state key="normal" title="パラメーター渡すぼたん"/>
                                 <connections>
                                     <segue destination="CBe-8W-v4K" kind="show" identifier="toSecondView" id="Xi5-Ob-rIa"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4v1-Iv-ExV">
-                                <rect key="frame" x="102" y="315" width="179" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4v1-Iv-ExV">
+                                <rect key="frame" x="87.5" y="315" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="sMV-bv-YEK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VfM-Xg-aNB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3RC-yf-9Q0"/>
+                            <constraint firstItem="4v1-Iv-ExV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DF5-7e-5fJ"/>
+                            <constraint firstItem="VfM-Xg-aNB" firstAttribute="top" secondItem="4v1-Iv-ExV" secondAttribute="bottom" constant="8" id="Eaa-KB-xfy"/>
+                            <constraint firstItem="4v1-Iv-ExV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="315" id="LVm-oC-gb9"/>
+                            <constraint firstItem="VfM-Xg-aNB" firstAttribute="top" secondItem="4v1-Iv-ExV" secondAttribute="bottom" constant="8" id="ngL-T4-9Ok"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
