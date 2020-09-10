@@ -60,9 +60,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             _items = try! PropertyListDecoder().decode([HogeSection].self, from: data)
         }
         
-        //高さを可変にする
-        commentTableView.estimatedRowHeight = 66
-        commentTableView.rowHeight = UITableView.automaticDimension
+        //Xcode 9（iOS 11 SDK）でUITableViewのSelf-Sizing（Auto Layoutによる高さの自動調整）がデフォルトになったにで以下コードは不要
+//        commentTableView.estimatedRowHeight = 66
+//        commentTableView.rowHeight = UITableView.automaticDimension
+        
     }
     
     // 設定
@@ -90,12 +91,14 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let item = _items[indexPath.section].Items[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DisneyCell", for: indexPath as IndexPath)
-//        cell.textLabel?.numberOfLines=0
-        cell.textLabel?.text = item.Name
         cell.imageView?.image = UIImage(named: item.Image)
         
-        //セルのサイズを指定
-//        image.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        //テキスト調整
+        cell.textLabel?.text = item.Name
+        cell.textLabel?.numberOfLines=0
+        //        cell.textLabel?.sizeToFit()
+
+
         return cell
     }
     
