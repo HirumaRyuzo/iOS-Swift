@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F983188250A28FA00F60FD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F983187250A28FA00F60FD0 /* ViewController.swift */; };
 		2FE3949D24F4DAB600443ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3949C24F4DAB600443ECE /* AppDelegate.swift */; };
 		2FE3949F24F4DAB600443ECE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3949E24F4DAB600443ECE /* SceneDelegate.swift */; };
 		2FE394A624F4DAB900443ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE394A524F4DAB900443ECE /* Assets.xcassets */; };
@@ -18,11 +19,11 @@
 		2FE394C124F4F0DA00443ECE /* GetDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE394BB24F4F0D200443ECE /* GetDay.swift */; };
 		2FE394C224F4F0DA00443ECE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE394BC24F4F0D600443ECE /* TableViewCell.swift */; };
 		2FE394C324F4F0DA00443ECE /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE394BD24F4F0DA00443ECE /* Create.storyboard */; };
-		2FE394C424F4F0DA00443ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE394BE24F4F0DA00443ECE /* ViewController.swift */; };
 		2FE394C624F4F11300443ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE394C524F4F11200443ECE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F983187250A28FA00F60FD0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2FE3949924F4DAB600443ECE /* CarthageRealmample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageRealmample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE3949C24F4DAB600443ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FE3949E24F4DAB600443ECE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		2FE394BB24F4F0D200443ECE /* GetDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDay.swift; sourceTree = "<group>"; };
 		2FE394BC24F4F0D600443ECE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2FE394BD24F4F0DA00443ECE /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
-		2FE394BE24F4F0DA00443ECE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../stv50_mrmt_27_30-deleteFlg/stv50_mrmt_27_30/ViewController.swift"; sourceTree = "<group>"; };
 		2FE394C524F4F11200443ECE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +81,7 @@
 				2FE394BB24F4F0D200443ECE /* GetDay.swift */,
 				2FE394BC24F4F0D600443ECE /* TableViewCell.swift */,
 				2FE394B924F4F0C900443ECE /* TrTodo.swift */,
-				2FE394BE24F4F0DA00443ECE /* ViewController.swift */,
+				2F983187250A28FA00F60FD0 /* ViewController.swift */,
 				2FE394A524F4DAB900443ECE /* Assets.xcassets */,
 				2FE394A724F4DAB900443ECE /* LaunchScreen.storyboard */,
 				2FE394AA24F4DAB900443ECE /* Info.plist */,
@@ -200,7 +200,7 @@
 				2FE3949F24F4DAB600443ECE /* SceneDelegate.swift in Sources */,
 				2FE394BF24F4F0DA00443ECE /* TrTodo.swift in Sources */,
 				2FE394C224F4F0DA00443ECE /* TableViewCell.swift in Sources */,
-				2FE394C424F4F0DA00443ECE /* ViewController.swift in Sources */,
+				2F983188250A28FA00F60FD0 /* ViewController.swift in Sources */,
 				2FE394C124F4F0DA00443ECE /* GetDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
