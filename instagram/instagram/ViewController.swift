@@ -20,14 +20,18 @@ var controller: UIDocumentInteractionController! = nil
         do {
 
            let Username =  "ryusan.e.disney" // Your Instagram Username here
-            let appURL = URL(string: "instagram://user?username=\(Username)")!
+//            let appURL = URL(string: "instagram://user?username=\(Username)")!
+            let appURL = URL(string: "instagram://camera")!
+
             let application = UIApplication.shared
 
             if application.canOpenURL(appURL) {
                 application.open(appURL)
             } else {
                 // if Instagram app is not installed, open URL inside Safari
-                let webURL = URL(string: "https://instagram.com/\(Username)")!
+//                let webURL = URL(string: "https://instagram.com/\(Username)")!
+                                let webURL = URL(string: "instagram://camera")!
+
                 application.open(webURL)
             }
     
